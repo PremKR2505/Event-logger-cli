@@ -58,8 +58,35 @@ public class Eventloggercli {
             pw.println(logEntry);
             System.out.println("Logged.");
         } catch (IOException e) {
-            System.out.println("Couldn't write to log file: " + e.getMessage());
+            System.out.println("Couldn't write to log file: try again maybe " + e.getMessage());
         }
+    }
+
+    //read all lines from the log file into a list
+    private static List<String> readAllLines() {
+        List<String> lines = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(LOG_FILE))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                lines.add(line);
+            }
+        } catch (IOException e) {
+            // no file yet, just return empty list
+        }
+        return lines;
+    }
+
+    private static void viewlogs() {
+        System.out.println("\n--- Logs ---");
+        List<String> lines = readAllLines();
+        if (lines.isEmpty()) {
+            System.out.println("Nothing has been logged yet.");
+        } else {
+            for (String line : lines) {
+                System.out.println(line);
+            }
+        }
+        System.out.println("------------");
     }
 
 
