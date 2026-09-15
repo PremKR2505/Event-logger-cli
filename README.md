@@ -11,6 +11,7 @@ Currently the the program gives the user mainly 4 options and another option to 
 - undo last event: Clears/undo the last entry
 - clear all logs: Clears all the recorded logs but asks for confirmation before that
 - view logs: Views all the recorded logs
+The program runs simply in you Command line interface so it should be able to give output and log the event pretty quickly.
 
 ## Technology used and requiremnts
 This program requires **minimum** java version of **Java 8(JDK 8)** because of `java.time.LocalDateTime` and `DateTimeFormatter`, which were introduced in Java 8
