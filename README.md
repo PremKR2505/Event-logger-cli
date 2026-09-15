@@ -40,5 +40,6 @@ The program gives you 5 total options
 - 5 to exit the program
 
 ## Screenshots
-<img width="1413" height="916" alt="Screenshot 2026-09-16 020113" src="https://github.com/user-attachments/assets/1996ed97-3606-44d5-a22b-7f1e3be4f3cd" />
+<img width="1406" height="914" alt="Screenshot 2026-09-16 021621" src="https://github.com/user-attachments/assets/d9d7c557-4086-49e3-959b-347a3346adf4" />
+
 
