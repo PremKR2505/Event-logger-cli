@@ -31,14 +31,14 @@ public class Eventloggercli {
                 if (description.isEmpty()) {
                     System.out.println("Description can't be empty.");
                 } else {
-                    logEvent(description);
+                    logevent(description);
                 }
             } else if (choice.equals("2")) {
-                viewLogs();
+                viewlogs();
             } else if (choice.equals("3")) {
-                undoLastEvent();
+                undolastevent();
             } else if (choice.equals("4")) {
-                clearLogs(scanner);
+                clearlogs(scanner);
             } else if (choice.equals("5")) {
                 System.out.println("Bye.");
                 scanner.close();
@@ -46,6 +46,19 @@ public class Eventloggercli {
             } else {
                 System.out.println("Enter 1-5.");
             }
+        }
+    }
+
+    private static void logevent(String description) {
+        String timestamp = LocalDateTime.now().format(formatter);
+        String logEntry = "[" + timestamp + "] " + description;
+
+        try (FileWriter fw = new FileWriter(LOG_FILE, true);
+             PrintWriter pw = new PrintWriter(fw)) {
+            pw.println(logEntry);
+            System.out.println("Logged.");
+        } catch (IOException e) {
+            System.out.println("Couldn't write to log file: " + e.getMessage());
         }
     }
 
