@@ -100,6 +100,18 @@ public class Eventloggercli {
         System.out.println("------------");
     }
 
+    private static void undolastevent() {
+        List<String> lines = readAllLines();
+        if (lines.isEmpty()) {
+            System.out.println("Nothing to undo.");
+            return;
+        }
+        String removed = lines.remove(lines.size() - 1);
+        writeAllLines(lines);
+        System.out.println("Removed: " + removed);
+    }
+    
+
 
 
     
