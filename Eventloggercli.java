@@ -71,9 +71,20 @@ public class Eventloggercli {
                 lines.add(line);
             }
         } catch (IOException e) {
-            // no file yet, just return empty list
+            // return empty list
         }
         return lines;
+    }
+
+    // write all lines from a list to the log file, overwriting it
+    private static void writeAllLines(List<String> lines) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(LOG_FILE, false))) {
+            for (String line : lines) {
+                pw.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Couldn't update log file: " + e.getMessage());
+        }
     }
 
     private static void viewlogs() {
