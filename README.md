@@ -6,7 +6,7 @@ This is a simple Event Logger which can run in your command line. It logs the us
 This program made in **Java language** that lets a user to quickly log timestamped text events to a file and review them later.When logging an event, it grabs the current date/time and saves it alongside the description to a text file
 
 ## Features
-Currently the the program gives the user mainly 4 options
+Currently the the program gives the user mainly 4 options and another option to exit the program
 - log event: Logs the entry with timestamp
 - undo last event: Clears/undo the last entry
 - clear all logs: Clears all the recorded logs but asks for confirmation before that
@@ -28,3 +28,12 @@ Clone the repo with
 
      javac Eventloggercli.java
      java Eventloggercli
+## Instructions for testing
+If you want test if the program is running well\
+**Make sure you're in a directory where the program has write permission (it'll create event_log.txt there)**
+The program gives you 5 total options
+- 1 to Log an event
+- 2 to View logs
+- 3 to undo last logged event
+- 4 to clear logs
+- 5 to exit the program
