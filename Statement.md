@@ -4,3 +4,9 @@ Often people are required to log entry as quickly and efficiently as possible. I
 - A command-line tool for logging short, timestamped text entries during field reporting
 - Local file-based storage in form of simple txt file where no internet or account required to log entry
 - Core actions: log an entry, view all entries, undo the last entry (for correcting mistakes), and clear the log (for starting a new assignment or wiping sensitive data)
+
+# Target users
+- Journalists and reporters that need to log and record the entry as quickly as possible especially ones reporting from disaster zones or breaking-news situations
+- Field researchers, humanitarian workers, or citizen journalists who need a simple incident/observation log while working in the field
+- Event organizers who want to record the timeline of the organised evnts
+- General users that want to log events conveniently and quickly
