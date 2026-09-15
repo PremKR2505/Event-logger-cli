@@ -38,3 +38,7 @@ The program gives you 5 total options
 - 3 to undo last logged event
 - 4 to clear logs
 - 5 to exit the program
+
+## Screenshots
+<img width="1413" height="916" alt="Screenshot 2026-09-16 020113" src="https://github.com/user-attachments/assets/1996ed97-3606-44d5-a22b-7f1e3be4f3cd" />
+
