@@ -1,2 +1,6 @@
 # Problem Statement
 Often people are required to log entry as quickly and efficiently as possible. In fields like journalists covering disasters like earthquakes, floods, conflict zones or war, emergency response they need to record events, observations, and timestamps quickly and reliably, often under unstable conditions (no internet, limited time, high-pressure environments). Existing solutions like note-taking apps or cloud-based tools depend on internet connectivity, drain battery with heavy interfaces, or risk losing data if a device crashes mid-session. There's a need for a lightweight, offline-first tool that captures what happened and when, with minimal friction and no risk of losing prior entries. This program can run easily on a command line interface and does not require internet connectivity to run after installation.
+# Scope of the project
+- A command-line tool for logging short, timestamped text entries during field reporting
+- Local file-based storage in form of simple txt file where no internet or account required to log entry
+- Core actions: log an entry, view all entries, undo the last entry (for correcting mistakes), and clear the log (for starting a new assignment or wiping sensitive data)
