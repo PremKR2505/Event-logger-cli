@@ -110,7 +110,19 @@ public class Eventloggercli {
         writeAllLines(lines);
         System.out.println("Removed: " + removed);
     }
-    
+
+    // clear all logs after confirmation
+    private static void clearlogs(Scanner scanner) {
+        System.out.print("Clear all logs? This cannot be undone (y/n): y means yes, n means no: ");
+        String confirm = scanner.nextLine().trim().toLowerCase();
+        if (!confirm.equals("y")) {
+            System.out.println("Cancelled.");
+            return;
+        }
+        writeAllLines(new ArrayList<>());
+        System.out.println("Log cleared.");
+    }
+}
 
 
 
