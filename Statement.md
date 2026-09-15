@@ -10,3 +10,12 @@ Often people are required to log entry as quickly and efficiently as possible. I
 - Field researchers, humanitarian workers, or citizen journalists who need a simple incident/observation log while working in the field
 - Event organizers who want to record the timeline of the organised evnts
 - General users that want to log events conveniently and quickly
+
+# High level features
+- Quick entry logging: Simply pu the event description in the CLI after choosing the required option; the system automatically timestamps it
+- Can be instantly reviewed: Pulls up the full chronological log on choosing the appropriate option
+- Undo safety net: lets the user correct and clear the last entry without manually editing the file
+- Clear/reset with confirmation: lets the user wipe the log between assignments, with a safeguard against accidental data loss
+- Privacy and security: Logs saved locally in a txt file so low chance of data breach unlike in cloud based services
+- Log file storage: File log saved quickly after the entry
+- Ease of usage: No account or internet required after installation logs are saved locally.
